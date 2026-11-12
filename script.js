@@ -2,26 +2,38 @@
    ELEMENTS
 ========================================================= */
 
-const preloader =
-    document.getElementById("preloader");
+const preloader = document.getElementById("preloader");
 
-const envelope =
-    document.getElementById("envelope");
+const envelope = document.getElementById("envelope");
 
-const openInvitation =
-    document.getElementById("openInvitation");
+const openInvitation = document.getElementById("openInvitation");
 
-const mainWebsite =
-    document.getElementById("mainWebsite");
+const mainWebsite = document.getElementById("mainWebsite");
 
-const musicButton =
-    document.getElementById("musicButton");
+const musicButton = document.getElementById("musicButton");
 
-const weddingMusic =
-    document.getElementById("weddingMusic");
+const weddingMusic = document.getElementById("weddingMusic");
 
-const petals =
-    document.getElementById("petals");
+const petals = document.getElementById("petals");
+
+const exploreButton = document.querySelector(".gold-button");
+
+
+// =========================================================
+// LOCK PAGE UNTIL "EXPLORE OUR CELEBRATION" IS PRESSED
+// =========================================================
+
+document.body.classList.add("celebration-locked");
+
+if (exploreButton) {
+
+    exploreButton.addEventListener("click", function () {
+
+        document.body.classList.remove("celebration-locked");
+
+    });
+
+}
 
 
 /* =========================================================
@@ -134,7 +146,7 @@ if (openInvitation) {
                 }, 50);
 
 
-            }, 1100);
+            }, 2800);
 
         }
     );
