@@ -1086,7 +1086,7 @@ button {
 
     font-family: "Cormorant Garamond", serif;
 
-    font-size: clamp(52px, 7vw, 82px);
+    font-size: clamp(36px, 7vw, 82px);
 
     line-height: 1.05;
 
@@ -1106,7 +1106,7 @@ button {
 
 .celebrations h2 {
     font-family: "Cormorant Garamond", serif;
-    font-size: clamp(52px, 7vw, 82px);
+    font-size: clamp(36px, 7vw, 82px);
     line-height: 1.05;
     font-weight: 600;
 
@@ -3128,9 +3128,9 @@ footer p {
 }
 
 
-/* =========================================================
+/*=========================================================
    RSVP CARD HEADING
-========================================================= */
+  =========================================================*/
 
 .rsvp-card h3 {
 
@@ -4258,10 +4258,13 @@ footer p {
 ========================================================= */
 
 /* Lock the entire page before Explore is pressed */
-body.celebration-locked {
-    overflow: hidden;
-    touch-action: none;
+body.celebration-locked 
+{
+    overflow-x: hidden;
+    overflow-y: auto;
+    touch-action: pan-y;
 }
+
 
 /* =========================================================
    EXPLORE OUR CELEBRATION BUTTON
